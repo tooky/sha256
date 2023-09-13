@@ -10,6 +10,10 @@ app.listen(PORT, () => {
    console.log("Server Listening on PORT:", PORT);
 });
 
+app.get("/", (_req, res) => {
+   res.send("Hi, I can give you a sha256 digest.")
+})
+
 app.get("/status", (_req, res) => {
    const status = {
       "Status": "Running"
