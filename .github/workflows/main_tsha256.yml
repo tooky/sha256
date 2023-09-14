@@ -52,4 +52,4 @@ jobs:
         app-name: 'tsha256'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d772a5fc35d94dd6ae5c1fe1a5e352fb }}
-        images: 'tookyregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_62855aedf0bb4f5e9869240b12d29501 }}/tooky/sha256@sha256:${{ needs.build.outputs.image_digest }}'
+        images: 'tookyregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_62855aedf0bb4f5e9869240b12d29501 }}/tooky/sha256@${{ needs.build.outputs.image_digest }}'
