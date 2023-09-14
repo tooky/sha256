@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (_req, res) => {
-   res.send("Hi, I can give you a sha256 digest! Post a {\"payload\": \"...\"} to /data.")
+   res.send("Hi, I can give you a sha256 digest!\n\nPost a {\"payload\": \"...\"} to /data.")
 })
 
 app.get("/status", (_req, res) => {
